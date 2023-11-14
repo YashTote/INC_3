@@ -1,0 +1,217 @@
+Week 4
+
+Week4 Day1:
+
+
+
+1. Create WebAPI Project 
+
+2. Create various layers on the project like controller, service, DbConext etc. Store 
+
+Team data using Entity Framework. 
+
+3. Display all the team information in json format using REST API and POSTMAN 
+
+as a client tool
+
+4. Use HTTP methods (GET, POST, PUT & DELETE)
+
+5. Follow coding standards and Guidelines.
+
+6. Implement different status codes 
+
+7. 20X -> OK, Created, CreatedAtAction, CreatedAtRoute
+
+8. 40X -> BadRequest, NotFound
+
+9. Test all the API’s functionality using swagger.
+
+
+
+Week4 day2: 
+
+ Perform all the CRUD operation for Team Entity and Players Entity
+
+ Use Exception handling wherever required.
+
+ Configure and implement LOG4Net to log into a file.
+
+ Log request (Parameters/JSON) and response(JSON) bodies to a file.
+
+ Identify the log levels and log with proper messages wherever needed. 
+
+
+
+Week4 Day3:
+
+ Apply basic authentication on the Web API application.
+
+ Implement cookie based authentication to any of the projects developed
+
+ Implement JWT token authentication
+
+ Authorize the API’S through roles like “Admin”, “User” etc.,
+
+
+
+Week4 Day4:
+
+Create an MS-Build project 
+
+The build file should have an output path, Target for build, clean and rebuild.
+
+Write simple NUnit test cases for API
+
+
+
+Week4 Day5:
+
+1. Create a new Angular project using Angular CLI
+
+2. Design Home page for your application with Username and password login.
+
+3. On successful login user should redirect to welcome home page else it will 
+
+display proper error message and same login page.
+
+4. Create class for Team and player by using typescript class and store data in an 
+
+Array. Display by using console.log.
+
+5. Landing page should have a Navbar
+
+6. Apply two way binding and event binding where ever required.
+
+7. Use static data for the list of players.
+
+8. Use Bootstrap/Material Angular Libraries.
+
+9. Create an array of teams for the component and add static values.
+
+10.Implement the below functionalities.
+
+ Structural Directives (NgIfElse, NgFor)
+
+ Use the array of teams & NgIfElse to display teams when array is not empty, 
+
+else display a message to user “No Data available”.
+
+ Use NgFor to iterate through list of teams and display the teams.
+
+ Add appropriate styles using NgClass directive for the data.
+
+
+
+Week4 Day6:
+
+ Create player and team component and display the previous array data by using 
+
+angular data binding.
+
+ Accept player’s data using template form or reactive form and display it on 
+
+console.
+
+ Design the other pages
+
+ Use *ngFor and *ngIf kind directives for displaying player and team data from 
+
+the array in the form of table.
+
+ Implement the pipes 
+
+o Date Pipe 
+
+o Currency Pipe,
+
+ Create a template driven form for the properties.
+
+ Add below validations.
+
+o Required
+
+o MinLength
+
+o Email
+
+o MaxLength
+
+o Disable submit button for an Invalid form
+
+o Display validation messages if elements are touched and dirty
+
+ Implement a Reactive form to create a registration form. 
+
+ Add validators wherever necessary.
+
+
+
+Week 5
+
+Week5 Day1:
+
+1. Apply routing 
+
+2. Create Services for the Project
+
+3. Integrate HttpClient and create a service layer to implement the API’s
+
+4. All the HttpMethods from the API’s should be implemented.
+
+5. Use Observables and Promises concepts
+
+6. Implement Routing for all the action methods we created for all the 
+
+components.
+
+
+
+Week5 Day2: 
+
+1. Using services and HTTP client bring data from dotnet WebAPI application 
+
+to Angular
+
+2. Use Angular Auth to create two separate login page for admin and user.
+
+3. Create a Login component and use static data to login into your 
+
+application.
+
+4. Implement AuthGaurds to the other components created earlier to 
+
+navigate back to Login page if not authorized
+
+5. Implement the JWT token in the above Login functionality. 
+
+6. Store the token in local storage and maintain your application state 
+
+accordingly.
+
+
+
+Week5 Day3: 
+
+1. Continue for all the required functionalities for the above assignment.
+
+2. Continue the yesterday assignment.
+
+
+
+Week5 Day4: 
+
+1. Apply bootstrap for all pages developed above. Use proper styling
+
+2. Deploy on Azure
+
+
+
+Week5 Day5: 
+
+1. Configure and setup Jenkins in your local and install all the required 
+
+plugins for Dotnet and Angular integration.
+
+2. Create a Jenkins pipeline of the Dotnet Web Api project
+
+3. Check the angular web application and WebAPI to display data.
