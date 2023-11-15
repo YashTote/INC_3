@@ -15,7 +15,7 @@ namespace dotnetapp.Models
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){
-                optionsBuilder.UseSqlServer("User ID = sa; password = examlyMssql@123; server = localhost; Database = webDB; trusted_connetion = false")
+                optionsBuilder.UseSqlServer("User ID = sa; password = examlyMssql@123; server = localhost; Database = webDB; trusted_connetion = false; Persist Security Info = false; Encrypt = false");
             }
         }
 
