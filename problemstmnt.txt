@@ -26,6 +26,16 @@ as a client tool
 
 9. Test all the API’s functionality using swagger.
 
+3. Display all the team information in json format using REST API and POSTMAN 
+
+as a client tool
+
+4. Use HTTP methods (GET, POST, PUT & DELETE)
+
+5. Follow coding standards and Guidelines.
+
+6. Implement different status codes 
+
 
 
 Week4 day2: 
