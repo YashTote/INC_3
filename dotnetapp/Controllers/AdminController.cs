@@ -24,6 +24,16 @@ namespace dotnetapp.Controllers
             return Ok();
         }
 
-        
+        public IActionResult GetTeams(){
+            return Ok();
+        }
+        public IActionResult PutPlayer(int id, Player player){
+              
+              return Ok();
+        }
+
+        public IActionResult  DeletePlayer(int id){
+            return Ok();
+        }
     }
 }
