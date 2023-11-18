@@ -18,7 +18,7 @@ as a client tool
 
 5. Follow coding standards and Guidelines.
 
-6. Implement different status codes 
+6. Implement different status codes `
 
 7. 20X -> OK, Created, CreatedAtAction, CreatedAtRoute
 
@@ -36,6 +36,7 @@ as a client tool
 
 6. Implement different status codes 
 
+for adding jwt ==> dotnet add package Microsoft.AspNetcre.Authentication.JwtBearer --version 6.0
 
 
 Week4 day2: 
@@ -44,9 +45,9 @@ Week4 day2:
 
  Use Exception handling wherever required.
 
- Configure and implement LOG4Net to log into a file.
+ Configure and implement LOG4Net to log into a file. // x x
 
- Log request (Parameters/JSON) and response(JSON) bodies to a file.
+ Log request (Parameters/JSON) and response(JSON) bodies to a file.  // X X
 
  Identify the log levels and log with proper messages wherever needed. 
 
