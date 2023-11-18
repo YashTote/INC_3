@@ -4,10 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using dotnetapp.Models;
 
+
+
 namespace dotnetapp.Controllers
 {
     
-
+[ApiController]
+[Route("/[controller]")]
     public class UserController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -16,7 +19,14 @@ namespace dotnetapp.Controllers
         {
             _context = context;
         }
-
-        
+        [HttpPost]
+        [Route("RegisterUser/")]
+        public IActionResult Register(User user){
+             return Ok();
+        }  
+     public IActionResult Login(User user){
+        return Ok();
+      }
     }
+
 }
