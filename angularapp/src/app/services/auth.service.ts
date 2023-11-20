@@ -10,7 +10,7 @@ export class AuthService {
   private url  = 'https://8080-aebcdfaefacffabcaaaceeafebecebbffdafdefabcc.premiumproject.examly.io/Movie';
 
   constructor(private httpclient : HttpClient) { }  
-  login() : Observable<{role : string}>{
+  login(username : string, password:string) : Observable<{role : string}>{
     return of ({role : 'ADMIN'});
   }
 
