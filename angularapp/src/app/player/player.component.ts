@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminService } from '../services/admin.service';
 
 @Component({
   selector: 'app-player',
@@ -10,7 +11,7 @@ export class PlayerComponent implements OnInit {
   players : [{id:number, name:string, age:number, category:string, biddingPrice: number}];
   newPlayer : {id:number, name:string, age:number, category:string, biddingPrice: number};
   // newPlayer :  ;
-  constructor() { }
+  constructor(private adminService : AdminService) { }
 
   ngOnInit(): void {
   }
