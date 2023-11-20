@@ -1,32 +1,47 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using dotnetapp.Models;
-
-
-
-namespace dotnetapp.Controllers
-{
-    
-[ApiController]
-[Route("/[controller]")]
-    public class UserController : ControllerBase
+﻿    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Cors;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using dotnetapp.Models;
+ 
+    namespace dotnetapp.Controllers
     {
-        private readonly ApplicationDbContext _context;
-
-        public UserController(ApplicationDbContext context)
+       
+           [ApiController]
+    [Route("/[controller]")]
+        public class UserController : ControllerBase
         {
-            _context = context;
+            private readonly ApplicationDbContext context;
+ 
+            public UserController(ApplicationDbContext _context)
+            {
+                context = _context;
+            }
+ 
+            [HttpGet]
+   
+            [Route("ListTeam")]
+            public IActionResult Get()
+            {
+                var data=from m in context.Teams select m;
+                return Ok(data);
+            }
+ 
+            [HttpPost]
+            [Route("UserLogin")]
+ 
+            public IActionResult Login() {
+                return Ok();
+            }
+ 
+            [HttpPost]
+            [Route("UserRegister")]
+            public IActionResult Register() {
+                return Ok();
+            }
+ 
+ 
+ 
+           
         }
-        [HttpPost]
-        [Route("RegisterUser/")]
-        public IActionResult Register(User user){
-             return Ok();
-        }  
-     public IActionResult Login(User user){
-        return Ok();
-      }
     }
-
-}

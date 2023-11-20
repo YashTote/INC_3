@@ -157,7 +157,7 @@ namespace dotnetapp.Controllers
         }
  
         [HttpGet]
-        [Route("DisplayTeamPlayers/(id)")]
+        [Route("DisplayTeamPlayers/{id}")]
  
         public IActionResult GetMovieDetail(int id)
         {
