@@ -156,7 +156,7 @@ namespace dotnetapp.Controllers
                 context.Players.Remove(data);
                 context.SaveChanges();
                 return Ok();
- 
+
            
         }
  
