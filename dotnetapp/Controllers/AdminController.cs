@@ -79,8 +79,6 @@ namespace dotnetapp.Controllers
                 mv.TeamName = Team.TeamName;
                 context.SaveChanges();
                 return Ok();
-               
- 
  
  
             }
@@ -101,6 +99,12 @@ namespace dotnetapp.Controllers
  
  
         // ------------Player Controller---------------------
+        [HttpGet]
+        [Route("ListPlayers")]
+        public IActionResult GetPlayers(){
+            var data = context.Players.ToList();
+            return Ok(data);
+        }
  
         [HttpPost]
         [Route("AddPlayer")]
