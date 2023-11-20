@@ -11,6 +11,9 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './menu/menu.component';
+import { OrganizerComponent } from './organizer/organizer.component';
+import { ErrorComponent } from './error/error.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MenuComponent } from './menu/menu.component';
     PlayerComponent,
     HomeComponent,
     AdminComponent,
-    MenuComponent
+    MenuComponent,
+    OrganizerComponent,
+    ErrorComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
