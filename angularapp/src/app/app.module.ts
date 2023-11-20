@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     RegistrationComponent,
     PlayerComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
