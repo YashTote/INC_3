@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   password : string;
   constructor(private ls : AuthService, private route :Router) { }
   login(){
-    this.ls.login(this.username,this.password).subscribe();
+    // this.ls.login(this.username,this.password).subscribe();
   }
 
   ngOnInit(): void {

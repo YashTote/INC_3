@@ -11,7 +11,9 @@ export class PlayerComponent implements OnInit {
   players : [{id:number, name:string, age:number, category:string, biddingPrice: number}];
   newPlayer : {id:number, name:string, age:number, category:string, biddingPrice: number};
   // newPlayer :  ;
-  constructor(private adminService : AdminService) { }
+  constructor(private adminService : AdminService) {
+    this.players.
+  }
 
   ngOnInit(): void {
   }
