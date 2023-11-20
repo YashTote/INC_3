@@ -12,7 +12,8 @@ export class PlayerComponent implements OnInit {
   newPlayer : {id:number, name:string, age:number, category:string, biddingPrice: number};
   // newPlayer :  ;
   constructor(private adminService : AdminService) {
-    this.players.
+    this.adminService.getPlayers().subscribe(data => {this.players.push(...data)});
+    console.log(this.players);
   }
 
   ngOnInit(): void {
